@@ -1,0 +1,175 @@
+:root {
+    --color-background: #b9c4c9;
+    --color-primary: #283655;
+    --color-text-in-background: #eeeeee;
+    --color-text-in-primary: #eeeeee;
+    --color-dark: #010101;
+
+    font-size: 60%
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body{
+    background: var(--color-background);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem;
+}
+
+header img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+}
+
+header h2{
+    margin-top: 1.6rem;
+    font-size: 3.2rem;
+    font-family: Rubik;
+    color: var(--color-text-in-primary)
+}
+header div{
+    width: calc(100%);
+    align-self: center;
+    text-align: center;
+}
+
+header p{
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    font-family: Rubik;
+    color: var(--color-text-in-primary)
+}
+
+.page-title h1{
+    color: var(--color-text-in-background);
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: Rubik;
+    padding: 3.2rem;
+    border-bottom: 2px solid var(--color-primary);
+}
+.container{
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portifolio-item{
+    opacity: 0.8;
+    width: calc(100% - 3.2rem);
+    background: var(--color-primary);
+    margin-bottom: 3.2rem;
+    margin-right: 3.2rem;
+    margin-left: 3.2rem;
+    border-radius: 3.2rem;
+    transition: 0.4s;
+}.portifolio-item:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.portifolio-item img{
+    width: 100%;
+    background: white;
+    padding: 1.6rem;
+    border-top-left-radius: 3.2rem;
+    border-top-right-radius: 3.2rem;
+}
+
+.portifolio-item h3{
+    align-self: center;
+    text-align: center;
+    color: var(--color-text-in-background);
+    font-size: 2.4rem;
+    font-family: Rubik;
+    padding: 1.6rem;
+}
+
+.portifolio-item ul{
+    list-style-type: none;
+
+}
+
+.tech-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.tech-list li{
+    background: var(--color-background);
+    margin-bottom: 1.6rem;
+    padding: 0.8rem;
+    width: 80px;
+    text-align: center;
+    border-radius: 1.6rem;
+    font-size: 1.2rem;
+    font-family: Rubik;
+}
+
+.buttons{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:0rem;
+}
+
+.buttons a{
+    width: 50%;
+    background: var(--color-dark);
+    color: var(--color-text-in-background);
+    height: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: Rubik;
+    padding-top: 1.6rem;
+    opacity: 0.6;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.buttons a:hover{
+    opacity: 1;
+}
+
+.buttons .live-demo{
+    border-bottom-left-radius: 3.2rem;
+}
+
+.buttons .code{
+    border-bottom-right-radius: 3.2rem;
+}
+
+
+@media(min-width: 700px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .portifolio-item{
+        justify-self: center;
+    }
+    .portifolio-item{
+        width: 400px;
+    }
+}
