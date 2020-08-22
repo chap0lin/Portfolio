@@ -135,6 +135,9 @@ header p{
 }
 
 .buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     background: var(--color-dark);
     color: var(--color-text-in-background);
@@ -142,7 +145,6 @@ header p{
     text-align: center;
     font-size: 1.6rem;
     font-family: Rubik;
-    padding-top: 1.6rem;
     opacity: 0.6;
     transition: 0.4s;
     text-decoration: none;
@@ -152,11 +154,18 @@ header p{
     opacity: 1;
 }
 
-.buttons .live-demo{
+.live-demo svg{
+    margin-right: 1.6rem;
+}
+.code svg{
+    margin-right: 1.6rem;
+}
+
+.live-demo{
     border-bottom-left-radius: 3.2rem;
 }
 
-.buttons .code{
+.code{
     border-bottom-right-radius: 3.2rem;
 }
 
