@@ -83,7 +83,6 @@ header p{
     transition: 0.4s;
 }.portifolio-item:hover{
     opacity: 1;
-    cursor: pointer;
 }
 
 .portifolio-item img{
@@ -101,6 +100,12 @@ header p{
     font-size: 2.4rem;
     font-family: Rubik;
     padding: 1.6rem;
+    transition: all 0.5s ease;
+}
+
+.portifolio-item h3:hover{
+    cursor: pointer;
+    color: var(--color-background);
 }
 
 .portifolio-item ul{
